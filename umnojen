@@ -1,0 +1,5 @@
+<?php
+for ($firstNumber=1; $firstNumber<10;$firstNumber++) 
+    { $umnojen=$firstNumber*$firstNumber;
+     echo "$firstNumber*$firstNumber=$umnojen\n";
+	}
