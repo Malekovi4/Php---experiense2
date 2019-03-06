@@ -1,0 +1,13 @@
+<?php
+error_reporting (-1);
+for ($vklad=10000;$vklad<1000000;$vklad=$vklad*1.1)
+    {$years=$years+1;
+    }
+$years2=$years+16;
+echo "Нашему герою:$years2";
+if ($years2>70)
+    {echo "Он не дожил до пенсии((";
+    } 
+else
+    { echo "Живым остался, парень";
+    }
