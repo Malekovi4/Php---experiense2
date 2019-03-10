@@ -1,0 +1,23 @@
+<?php
+error_reporting(-1);
+$code=array(
+	'а' => '4',
+	'б' => '6',
+	'в' => '8',
+	'г' => 'r',
+    'e' => '$',
+	'з' => '3',
+	'ж' => '>|<',
+	'и' => 'N',
+	'к' => '|<',
+	'л' => '^',
+	'с' => ')',
+	'р' => '|°',
+	'у' => 'Y',
+	);
+$text = 'ярчан я !';
+$cipher = strtr($text, $code); 
+echo "Оригинал: {$text}\nШифровка:{$cipher}\n";
+$flip = array_flip($code);
+$unCipher=strtr($cipher,$flip);
+	echo "Расшифровка: {$unCipher}\n";
